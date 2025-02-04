@@ -8,11 +8,13 @@ llm = Llama(
       #cache-type-k="q8_0"
 )
 
-query = "I am unable to run CheckM on Galaxy. Previously, I used the public server galaxy.org, but it showed the message," \
-    " “The job was terminated because it was using more memory than allocated.”" \
-    " I attempted to run the same job with smaller files in the MB range, but the problem persisted." \
-    " I then tried using other Galaxy servers, and now I am receiving an error stating, “Problem with the dataset.” However," \
-    " the dataset contains only FASTA files. Can someone please help me with this issue?"
+#query = "I am unable to run CheckM on Galaxy. Previously, I used the public server galaxy.org, but it showed the message," \
+#    " “The job was terminated because it was using more memory than allocated.”" \
+#    " I attempted to run the same job with smaller files in the MB range, but the problem persisted." \
+#    " I then tried using other Galaxy servers, and now I am receiving an error stating, “Problem with the dataset.” However," \
+#    " the dataset contains only FASTA files. Can someone please help me with this issue?"
+
+query = "What is"
 
 output = llm(
       "<｜User｜>" + query + "<｜Assistant｜>", # Prompt
